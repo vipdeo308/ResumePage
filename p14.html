@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        #vl {
+            border-left: 3px solid grey;
+            height: 745px;
+            width: 3px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 10cm;
+        }
+        .container {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            margin: 0px;
+            align-content: center;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background: grey;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 20%;
+            z-index: 1;
+            margin: 200px 0px;
+            background: white;
+        }
+
+        .box3 {
+            width: 100%;
+            height: 17%;
+            z-index: 2;
+            margin: 240px 0px;
+            background: grey;
+        }
+
+        .name-box {
+            width: 46%;
+            height: 30%;
+            z-index: 5;
+            margin: 180px 25%;
+            background: orange;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            font: 60px comic;
+            padding: 6px 0 10px 0;
+        }
+
+        .circle-image {
+            z-index: 3;
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 180px;
+            height: 180px;
+            margin: 3% 40%;
+            border: 4px dotted orange;
+        }
+
+        .circle-image #photo {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+
+        #addr{
+            margin-top: 90px;
+            text-align: center;
+        }
+
+        #content{
+            width: 100%;
+        }
+
+        #left{
+            width: 48%;
+            padding: 2% 2% 0 2%;
+        }
+
+        #right{
+            width: 48%;
+            padding: 2% 4% 0 4%;
+        }
+
+        .icon {
+            z-index: 3;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 30px;
+            height: 30px;
+            color-scheme:orange;
+            background-color: grey;
+            border: 4px dotted orange;
+        }
+
+        .skills{
+            width: 100%;
+        }
+
+        .heading{
+            width: 100%;
+        }
+
+        .name{
+            width: 50%;
+        }
+
+        .duration{
+            text-align: right;
+        }
+
+        h1{
+            color: grey;
+            display:inline;
+        }
+
+        p { 
+            width: 100%;
+            text-align: justify; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box circle-image"><img id="photo" src="https://cdn.idcrawl.com/images/profiles/male2.jpeg" width="100" height="120" alt="Photo"></div>
+        <div class="box name-box">BRIAN DUDEY</div>
+    </div>
+    <div id="addr">
+        N. Damen Avenue, Chicago 99999 | 999-999-9999 | hello@kickresume.com | www.kickresume.com
+    </div>
+    <hr>
+    <table id="content">
+        <tr>
+            <td id="left">
+                <span><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg><h1>Profile</h1></span>
+                <p>
+                    Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventerous, assidious, animated and an alliteration advocate.  
+                </p> 
+                <span><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"/></svg><h1>Skills</h1></span>
+                <table class="skills"">
+                    <tr>
+                        <th colspan="2"><b>Technical Skills</b></th>
+                    </tr>
+                    <tr>
+                        <td><label for="JS">JavaScript</label></td>
+                        <td><progress id="JS" value="80" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="CSS">CSS</label></td>
+                        <td><progress id="CSS" value="80" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="HTML">HTML</label></td>
+                        <td><progress id="HTML" value="60" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="react">React</label></td>
+                        <td><progress id="react" value="60" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="redux">Redux</label></td>
+                        <td><progress id="redux" value="80" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mongo">Mongo</label></td>
+                        <td><progress id="mongo" value="80" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dep">Deployment</label></td>
+                        <td><progress id="dep" value="100" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><b>Additional Skills</b></th>
+                    </tr>
+                    <tr>
+                        <td><label for="mgmnt">Project Management</label></td>
+                        <td><progress id="mgmnt" value="100" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="recruit">Recruitment</label></td>
+                        <td><progress id="recruit" value="80" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dev">Business Development</label></td>
+                        <td><progress id="dev" value="100" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="edit">Editing</label></td>
+                        <td><progress id="edit" value="80" max="100" disabled></progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fund">Fundraising</label></td>
+                        <td><progress id="fund" value="100" max="100" disabled></progress></td>
+                    </tr>
+                </table>
+                <span><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg><h1>Work experience</h1></span>
+                <table class="heading">
+                    <tr>
+                        <td class="name"><b>Event Manager</b></td>
+                        <td class="duration">03/2014-02/2017</td>
+                    </tr>
+                    <tr>
+                        <td class="place" colspan="2">C3 Presents, Washington DC</td>
+                    </tr>
+                </table>
+                <ul type="disc">
+                    <li>
+                        <p>Lead and execute all the phases of planning and production spanning committee recruitment, training, vendor relationships and on-site facilitation.</p>
+                    </li>
+                    <li>
+                        <p>Brought new business to the organization through relentless networking and stewardship which helped the company win the bid for the State Department Summit on the Middle East and, the companies lkargest civic event to date, the United States of Women.</p>
+                    </li>
+                    <li>
+                        <p>Exercise fiscal conrol over budget creaion tracking and reporting. Collaborate with employees over all organizational level to achieve cohesive operations.</p>
+                    </li>
+                </ul>   
+            </td>
+            <td>
+                <div id="vl"></div>
+            </td>
+            <td id="right">
+                <span><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg><h1>Work experience</h1></span>
+                <table class="heading">
+                    <tr>
+                        <td class="name"><b>Community Relations Manager</b></td>
+                        <td class="duration">06/2011-01/2014</td>
+                    </tr>
+                    <tr>
+                        <td class="place" colspan="2">Gay & Lesbian Elder Housing, Los Angeles</td>
+                    </tr>
+                </table>
+                <ul type="disc">
+                    <li>
+                        <p>Arranging presentations and pitch deck.</p>
+                    </li>
+                    <li>
+                        <p>Designing a PR plan and establishing important focus points.</p>
+                    </li>
+                    <li>
+                        <p>Designing, creating and managing content across multiple communication platforms.</p>
+                    </li>
+                    <li>
+                        <p>Building relationships with key media players.</p>
+                    </li>
+                </ul>
+                <span><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/></svg><h1>Education</h1></span>
+                <table class="heading">
+                    <tr>
+                        <td class="name"><b>Engineering Immmersion Program</b></td>
+                        <td class="duration">11/2018-06/2018</td>
+                    </tr>
+                    <tr>
+                        <td class="place" colspan="2">Thinkful, Chicago, IL</td>
+                    </tr>
+                </table>
+                <p>
+                    Project-focused intensive proram with emphasis on Mongo, Express, React, and Javascript (MERN) technical stack.
+                </p>
+                <ul type="disc">
+                    <li>
+                        <p>Developed a full stack web application "RenewU", using React hat allows a user to explore various aspects of meditation. User's  progress is stored on a backend created using Node and MongoDB.</p>
+                    </li>
+                    <li>
+                        <p>Developed a language learning app "Foodie Phonetics" using spaced repetition and a linked list data structure. React was used to create the frontend while Node and Mongo were used to create a backend that stores user data.</p>
+                    </li>
+                    <li>
+                        <p>Developed a conceirge app "Pley", for individuals looking for curated suggestions when visiting a new place. React was used to develop the frontend which includes real-time chat, drag and drop and a variety of advanced features. the backend built using Node, Express and Mongo, takes advantage of RESTful API, Geospatial searching and user authentication with JWT.</p>
+                    </li>
+                </ul>
+                <table class="heading">
+                    <tr>
+                        <td class="name"><b>BA, English</b></td>
+                        <td class="duration">09/2001-09/2005</td>
+                    </tr>
+                    <tr>
+                        <td class="place" colspan="2">University of California, Los Angeles</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>    
+</body>
+</html>
